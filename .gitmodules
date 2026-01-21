@@ -1,9 +1,9 @@
 [submodule "anki/wired/vector-gobot"]
 	path = anki/wired/vector-gobot
 	url = https://github.com/kercre123/vector-gobot
-[submodule "anki/vector-cloud"]
-	path = anki/vector-cloud
-	url = https://github.com/digital-dream-labs/vector-cloud
 [submodule "anki/victor"]
 	path = anki/victor
 	url = https://github.com/Victor-Rebuild/Victor-1.4-Rebuild
+[submodule "anki/vector-cloud"]
+	path = anki/vector-cloud
+	url = https://github.com/Victor-Rebuild/vector-cloud-nodocker
