@@ -6,7 +6,7 @@ DEPENDS = "bash"
 FILESPATH =+ "${WORKSPACE}:"
 SRC_URI = "file://external/purplpkg"
 
-S = "${UNPACKDIR}/external/purplpkg"
+S = "${WORKDIR}/external/purplpkg"
 
 do_compile() {
 }
@@ -17,4 +17,4 @@ do_install() {
    chmod 0755 ${D}/usr/sbin/purplpkg
 }
 
-FILES:${PN} += "usr/sbin"
+FILES_${PN} += "usr/sbin"
