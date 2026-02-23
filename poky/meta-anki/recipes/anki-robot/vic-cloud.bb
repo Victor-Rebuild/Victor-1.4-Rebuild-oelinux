@@ -46,7 +46,6 @@ do_compile() {
     cd "${EXTERNALSRC}"
     export GOPATH="${GOPATH}"
     export PATH="${GOEXEPATH}/go/bin:${PATH}"
-    make all
 }
 
 do_install () {
