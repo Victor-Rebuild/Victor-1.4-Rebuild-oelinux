@@ -15,4 +15,5 @@ IMAGE_INSTALL += "logrotate"
 IMAGE_INSTALL += "kernel-module-ramoops"
 IMAGE_INSTALL += "${@base_contains('DISTRO_FEATURES','avahi', 'avahi-daemon', '', d)}"
 
-IMAGE_INSTALL += "purplpkg"
+#commented out till i have a better time to figure out why it isnt installing right
+#IMAGE_INSTALL += "purplpkg"
