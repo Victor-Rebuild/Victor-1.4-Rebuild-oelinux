@@ -7,3 +7,6 @@
 [submodule "anki/vector-cloud"]
 	path = anki/vector-cloud
 	url = https://github.com/Victor-Rebuild/vector-cloud-nodocker
+[submodule "external/purplpkg"]
+	path = external/purplpkg
+	url = https://github.com/purpl-org/purplpkg

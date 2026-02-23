@@ -12,7 +12,7 @@ if [ ! -e /etc/localtime -a ! -e /etc/TZ ]; then
 fi
 
 if [ "$HOME" = "/home/root" ]; then
-   PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin
+   PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin:/data/purplpkg
 fi
 
 # works for bash and ash (no other shells known to be in use here
@@ -28,6 +28,12 @@ fi
 if [ -x /usr/bin/resize ];then
   /usr/bin/resize >/dev/null
 fi
+
+alias stop_robot="systemctl stop anki-robot.target"
+alias start_robot="systemctl start anki-robot.target"
+alias ppkg="purplpkg"
+alias mrw="mount -o rw,remount /"
+alias reboot="/sbin/reboot "$1" & exit"
 
 export PATH PS1 OPIEDIR QPEDIR QTDIR EDITOR TERM
 

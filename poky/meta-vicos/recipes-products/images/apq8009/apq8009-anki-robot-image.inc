@@ -14,3 +14,5 @@ IMAGE_INSTALL += "syslog-ng"
 IMAGE_INSTALL += "logrotate"
 IMAGE_INSTALL += "kernel-module-ramoops"
 IMAGE_INSTALL += "${@base_contains('DISTRO_FEATURES','avahi', 'avahi-daemon', '', d)}"
+
+IMAGE_INSTALL += "purplpkg"
